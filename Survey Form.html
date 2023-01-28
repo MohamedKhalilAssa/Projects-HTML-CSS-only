@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <style> 
+    body{
+        background-position:center ;
+        background-color: #686868;
+}
+form{
+    width:75%;
+        background-color: #FFA07A;
+        margin:0 auto;
+        color:black;
+        max-width:900px ;
+        border: 1px solid black ;
+        border-radius: 16px;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+#description{
+    text-align:center;
+    font-size: 25px;
+}
+fieldset{
+    border:none;
+}
+#fst{
+border-top:1.5px solid;
+}
+#thrd{
+    border-bottom:1.5px solid ;
+}
+#name-label,#email-label,#number-label,#select-label,.question,#comm{
+    display:block;
+    font-size: 25px;
+}
+#comm{
+    margin:0  ;
+    margin-bottom:5px ;
+}
+input{
+    display:block;
+width :95% ;
+height:28px;
+padding-left: 15px ;
+margin: 10px auto;
+}
+.question{
+    margin-bottom: 5px;
+}
+.check{
+    font-size:20px ;
+    display: block;
+}
+.choice{
+    font-size:20px
+}
+select{
+    height:28px;
+    margin:10px auto;
+    padding-left:15px;
+    margin-left:11px;
+    width:20%;
+}
+
+input[type='checkbox'],input[type='radio']{
+    display:inline;
+    width:2em;
+    height:12px;
+}
+textarea{
+    border:none;
+    width:95% ;
+    margin-left:11px ;
+    height:125px;
+}
+input[type='submit']{
+    margin: 10px auto;
+    width:125px ;
+    border:1px solid;
+    border-radius: 16px;
+}
+footer{
+    text-align:center;
+}
+a:active,a:hover{
+    color:white;
+}
+    </style>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body> 
+<form id="survey-form"> 
+    <h1 id="title">Survey Form</h1>
+<p id="description"><em>Please fill this form</em></p>
+    <fieldset id="fst"> 
+<label id="name-label">Name:<input id='name' type="text" required placeholder="Enter Your Name..." ></label>
+<label id="email-label">Email: <input type='email' required id="email" placeholder="Enter Your Email..."></label>
+<label id="number-label">Age (optional):<input id="number" placeholder='Enter Your age...' type="number" min=13 max="120"> </label>
+</fieldset>
+<fieldset id="snd">
+    <label for="dropdown" id="select-label">Which option describes your current role:</label>
+    <select id="dropdown">
+        <option name="1">(select one)</option>
+        <option name="2">Student</option>
+        <option name="3">Employed</option>
+        <option name="4">Unemployed</option>
+    </select>
+    <p class="question">Would you send this link to a friend?</p>
+    <label class="choice">Yes</label><input type="radio" name="answer" value="yes"></label>
+    <label class="choice">No</label><input type="radio" name="answer" value="no"></label>
+    <label class="choice">Maybe</label><input type="radio" name="answer" value="maybe"></label>
+    <p class="question">Where did you find this mini-project?</p>
+    <label class="check" ><input type="checkbox" id="linkeddin" value='linkedin'>Linkedin</label>
+    <label class="check" ><input type="checkbox" id="facebook" value='facebook'>Facebook</label>
+    <label class="check"><input type="checkbox" id="instagram" value='instagram'>Instagram</label>
+</fieldset>
+<fieldset id="thrd">
+    <p id="comm">Comments:</p>
+    <textarea placeholder="Give Us your thoughts about the looks of the form..."></textarea>
+</fieldset>
+<input id='submit' type="submit">
+</form>
+<footer>
+    <p>Made by Mohamed Khalil Assaddiki - Visit My <a target='_blank' href='https://www.linkedin.com/in/mohamed-khalil-assaddiki-15511b25b' >LinkedIn</a></p>
+</footer>
+</body>
+</html>
