@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation C</title>
+    <link rel="stylesheet" href='styles.css'>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/83c420d71b.css" crossorigin="anonymous">
+</head>
+<body>
+
+
+   <nav id="navbar">
+    <header>C Basics</header>
+    <br>
+    <ul class="navlist">
+        <li><a class='nav-link' href='#Introduction'>Introduction</a></li>
+        <li><a class='nav-link' href='#Get_Started'>Get Started</a></li>
+        <li><a class='nav-link' href='#Variables'>Variables</a></li>
+        <li><a class='nav-link' href='#Data_Types'>Data Types</a></li>
+        <li><a class='nav-link' href='#if_statement'>If...Else</a></li>
+        <li><a class='nav-link' href='#Switch'>Switch Statement</a></li>  <!--nav bar used to navigate through the documentation-->
+        <li><a class='nav-link' href='#while_loop   '>While Loop</a></li>
+        <li><a class='nav-link' href='#for_loop'>For Loop</a></li>
+        <li><a class='nav-link' href='#Array'>Arrays</a></li>
+    </ul>
+   </nav>
+
+   
+   <main id="main-doc"> <!--Here is where the INFO part will be-->
+    <section class="main-section" id="Introduction">
+        <header class="main">Introduction</header>
+        <p> <span></span>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972. It is a very popular language, despite being old.
+            C is strongly associated with UNIX, as it was developed to write the UNIX operating system.<br></p>
+            <p><span></span> If you know C, you will have no problem learning other popular programming languages such as Java, Python, C++, C#, etc, as the syntax is similar.<br>
+            So Let's Begin.</p>
+        </p>
+    </section>
+    <section class="main-section" id="Get_Started">    <!--I admit the code inside this section looks a bit messy but I'll to improve this side in the next project-->
+        <header class="main">Get Started</header>
+        <p><i></i>An IDE (Integrated Development Environment) is used to edit AND compile the code.
+            Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C code.
+            Note: Web-based IDE's can work as well, but functionality is limited.
+        </p>    
+            <br>
+        <p>Here is a sample of the simplest code on C:</p>
+            <code class="center "><br><br>
+                   #include &lt;stdio.h&gt;<br>
+                    <i></i><i></i> <span class='blue'>int</span> main() {<br>
+                        <i></i><i></i> <span class='blue'>printf</span>("Hello World!");<br>
+                          <i></i> <span class='blue'>return</span> 0;<br>
+                        }<br><br>
+              </code>
+        <br>
+          <p><i></i> We will use Code::Blocks in our tutorial, which we believe is a good place to start.
+            You can find the latest version of Codeblocks at <a class='main-links' target="_blank"  href='http://www.codeblocks.org/.'>www.codeblocks.org</a> <br>
+           <span class="center">------------------Download the mingw-setup.exe file, which will install the text editor with a compiler-----------------------</span> </p>
+            
+        
+    </section>
+    <section class="main-section" id="Variables">
+        <header class="main">Variables</header>
+        <p>Variables are containers for storing data values, like numbers and characters.
+            In C, there are different types of variables (defined with different keywords), for example:</p><br>
+            <code class="center frame">type variableName = value;</code><br><br>
+        <p>All C variables must be identified with <strong>unique names.</strong>Names cannot contain whitespaces or special characters like !, #, %. Nor begin with a number.</p>    
+    </section>
+    <section class="main-section" id="Data_Types">
+        <header class='main'>Data Types</header>
+        <br>
+        <table>
+            <thead> 
+                <tr> 
+                   <th id="title">Data Type</th>
+                   <th id="description">Description</th>
+                </tr>    
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="types">int</th>
+                    <td class="details">Stores whole numbers, without decimals</td>
+                </tr>
+                <tr>
+                    <th class="types">float</th>
+                    <td class="details">Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits</td>
+                </tr>
+                <tr>
+                    <th class="types">double</th>
+                    <td class="details">Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</td>
+                </tr>
+                <tr>
+                    <th class="types">char</th>
+                    <td class="details">Stores a single character/letter/number, or ASCII values</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="main-section" id="if_statement">
+        <header class='main'>If Statement </header>
+        <p>You have already learned that C supports the usual logical <strong> conditions </strong>from mathematics:</p><br>
+           <ul>
+            <li>Less than: <code><i></i><i></i> a &lt b </code></li>
+            <li>Less than or =:<code>  a &lt= b ....</code></li>
+           </ul> <br>
+        <p>You can use these conditions to perform different actions for different decisions.</p><br>
+        <p>C has the following conditional statements:</p><br>
+        <ul>
+            <li>
+                <p>Use <strong>if</strong> to specify a block of code to be executed, if a specified condition is true</p>
+            </li>
+            <li>
+                <p>Use <strong>else</strong> to specify a block of code to be executed, if the same condition is false</p>
+            </li>
+            <li>
+                <p>Use <strong>else if</strong> to specify a new condition to test, if the first condition is false</p>
+
+            </li>
+        </ul>
+        
+    </section>
+    <section class="main-section" id="Switch">
+        <header class='main'>Switch</header>
+        <p>Instead of writing many if..else statements, you can use the switch statement.</p><br>
+        <p>This is how it works:</p><br>
+        <code class=' blue center'>switch(expression) {<br>
+            <span class='blue center'> case x:.....}</span><br>
+             <span class="center green"> // code block</span><br>
+             <span class='center blue'>break; </span><br>
+             <span class=' center green'>//Repeat the process as many times as you need</span>
+            </code>
+    </section>
+    <section class="main-section" id="while_loop">
+        <header class='main'>While Loop</header>
+       <p>The while loop loops through a block of code as long as a specified condition is true:</p>
+       <div class="syntax"> 
+            <h3>Syntax:</h3>
+            <code><span class='blue'>while (condition)</span>{<br>
+                // code block to be executed<br>
+              }<br><br>
+            </code>
+        </div>
+    </section>
+    <section class="main-section" id="for_loop">
+        <header class='main'>For Loop</header></section>
+        <p>When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:</p>
+       <div class="syntax"> 
+            <h3>Syntax:</h3>
+            <code><span class='blue'>for (statement 1; statement 2; statement 3)</span>{<br>
+                // code block to be executed<br>
+              }<br><br>
+            </code>
+        </div>
+    <section class="main-section last" id="Array">
+        <header class='main'>Array</header>
+        <p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+            To create an array, define the data type (like int) and specify the name of the array followed by<strong> square brackets [].</strong></p>
+        <p>Here is an example:</p><br><br>
+        <code class='frame center'><span class='blue'>int</span> myNumbers[] = {25, 50, 75, 100};</code>
+    </section>
+
+    <h2 id="source">The source of the documentation above is : <a id='src-a' href='https://www.w3schools.com/c/index.php'>W3Schools</a></h2>
+
+   </main>
+   <footer id="foot"><p>This was made by Mohamed Khalil Assaddiki - To visit <a href='https://www.linkedin.com/in/mohamed-khalil-assaddiki-15511b25b/'>LinkedIn</a></p></footer>
+</body>
+</html>
