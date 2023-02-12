@@ -1,0 +1,86 @@
+body{
+    background-position:center ;
+    background-color: #686868;
+}
+form{
+width:75%;
+    background-color: #FFA07A;
+    margin:0 auto;
+    color:black;
+    max-width:900px ;
+    border: 1px solid black ;
+    border-radius: 16px;
+}
+h1 {
+text-align: center;
+font-size: 40px;
+}
+#description{
+text-align:center;
+font-size: 25px;
+}
+fieldset{
+border:none;
+}
+#fst{
+border-top:1.5px solid;
+}
+#thrd{
+border-bottom:1.5px solid ;
+}
+#name-label,#email-label,#number-label,#select-label,.question,#comm{
+display:block;
+font-size: 25px;
+}
+#comm{
+margin:0  ;
+margin-bottom:5px ;
+}
+input{
+display:block;
+width :95% ;
+height:28px;
+padding-left: 15px ;
+margin: 10px auto;
+}
+.question{
+margin-bottom: 5px;
+}
+.check{
+font-size:20px ;
+display: block;
+}
+.choice{
+font-size:20px
+}
+select{
+height:28px;
+margin:10px auto;
+padding-left:15px;
+margin-left:11px;
+width:20%;
+}
+
+input[type='checkbox'],input[type='radio']{
+display:inline;
+width:2em;
+height:12px;
+}
+textarea{
+border:none;
+width:95% ;
+margin-left:11px ;
+height:125px;
+}
+input[type='submit']{
+margin: 10px auto;
+width:125px ;
+border:1px solid;
+border-radius: 16px;
+}
+footer{
+text-align:center;
+}
+a:active,a:hover{
+color:white;
+}
