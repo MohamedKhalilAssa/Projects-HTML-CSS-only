@@ -85,7 +85,6 @@ border: 4px solid black ;
     border: 4px solid black ;
     margin-top:120px;
     width:50%;
-    max-width:1000px;
     height:40vh;
     padding:10px;
     line-height: 40px;
@@ -94,7 +93,7 @@ border: 4px solid black ;
     display: grid;
     justify-items: center;
     color: var(--logo-color3);  
-    margin-top:10vh;
+    padding-top:4vh;
     height:120vh;
     background:linear-gradient(var(--logo-color1),var(--logo-color1)25%, rgb(9, 88, 9));
     border-bottom:0.9vh solid var(--logo-color2);
@@ -115,13 +114,11 @@ border: 4px solid black ;
     border:3px solid black;
 
 }
-#Overview{
-    display: grid;
-    justify-items: center;
-    margin-top:0;
-    background:linear-gradient(rgb(9, 88, 9),rgb(9, 88, 9)25%,var(--logo-color1));
-    height: 80vh;
+#Menu{
+    height:140vh;
+
 }
+
 #video{
     width:500px;
     height:300px;
@@ -192,25 +189,72 @@ color:white;
 width:200px;
 
 }
-@media only screen and (max-width:500px){
-    .nav-link{
-        font-size: 4vw;
-        padding:0px;
-
-    }
-    #nav-bar{
-        gap:5px;
-        top:4vh;
-        left:0.005px;
-    }
-    #header-title{
-        font-size: 5vw;
-        top:6.9vw;
+@media  (max-width:452px){
+    nav{
+        visibility: hidden;
     }
     #About{
-        width:100%;
-        background-position: 25%;
+        height:160vh;
     }
+    #About-text p{
+        width:85vw;
+        height:80vh;
 
-
+    }
+    #images-div { 
+     display: flex;
+     flex-direction: column;
+    }
+    #Menu { 
+        height:300vh;
+        margin:0;
+    }
+    .menu-images{
+        width:380px;
+    }
+    #Overview{
+        height:80vh;
+    }
+    #video{
+        padding-top:10vh;
+        width: 300px;
+    }
 }
+@media screen and (max-width:1400px){
+    #images-div { 
+     display: flex;
+     flex-direction: column;
+    }
+    #Menu { 
+        height:235vh;
+
+    }
+    #Overview{
+        height:80vh;
+    }
+}
+@media screen and (max-width:768px){
+    #About{
+        height:100vh;
+    }
+    #About-text p{
+        width:85vw;
+        height:50vh
+
+    }
+    #images-div { 
+     display: flex;
+     flex-direction: column;
+    }
+    #Menu { 
+        height:270vh;
+
+    }
+    #Overview{
+        height:80vh;
+    }
+    #video{
+        padding-top:10vh;
+    }
+}
+
