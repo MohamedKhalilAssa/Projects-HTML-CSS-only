@@ -1,10 +1,11 @@
-Hello There,                                                  
-Thank you for sparing your time to check on my projects.  
+# Notice:
 This repository contains my first projects with HTML & CSS, 
-I used them as a way to solidify my knowledge and to see my devollopment throughout my career as a Software Engineer.
-I'm  learning all this by my self aside from university subject.
+I used them to solidify my knowledge and see my development throughout my career as a Software Engineer.
+I'm  learning all this by myself aside from university subjects.
 Thanks again
  Down below you'll see an overview of 2 of the projects in this repository.
+
+ # Preview:
  
 
 
@@ -14,4 +15,7 @@ Thanks again
 
 
 Thanks again!!
-Have a good day/night.
+
+  # How to Run the Projects 
+To run any of the projects in this repository, simply clone the repository to your local machine and open the corresponding HTML file in your web browser. Each project is entirely self-contained, so you don't need to install any additional dependencies or tools.
+
