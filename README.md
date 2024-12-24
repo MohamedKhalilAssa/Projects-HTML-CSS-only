@@ -14,7 +14,6 @@ Thanks again
 ![Project 1 -- Basic Survey Form](https://user-images.githubusercontent.com/123842557/225620534-ec32a970-9619-47b0-959d-cde91dc8bb9c.jpg)
 
 
-Thanks again!!
 
   # How to Run the Projects 
 To run any of the projects in this repository, simply clone the repository to your local machine and open the corresponding HTML file in your web browser. Each project is entirely self-contained, so you don't need to install any additional dependencies or tools.
